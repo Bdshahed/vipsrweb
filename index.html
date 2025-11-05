@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Team SR VIP — WinGo 1 Min Hack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stage">
+    <div class="lighting"></div>
+    <header class="topbar">
+      <div class="brand">
+        <img src="assets/logo.png" alt="SR VIP" class="logo" onerror="this.style.display='none'"/>
+        <div>
+          <h1>Team SR <span class="accent">VIP</span></h1>
+          <div class="subtitle">Owner: @shahedbintarek — Full Premium Lock</div>
+        </div>
+      </div>
+      <nav class="links">
+        <a href="https://t.me/SR_Public_metting" target="_blank">Channel</a>
+        <a href="https://www.dkwin.xyz/#/register?invitationCode=16532572738" target="_blank">Register</a>
+        <a id="connect-admin" href="https://t.me/shahedbintarek" target="_blank">Connect Admin</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <aside class="panel left">
+        <div class="card">
+          <div class="card-head">Current Period</div>
+          <div class="period" id="period">--</div>
+          <div class="countdown" id="countdown">00:00</div>
+          <div class="btns">
+            <button class="btn primary" id="launch">Launch AI Hack</button>
+            <button class="btn ghost" id="history-btn">History</button>
+          </div>
+          <div class="small muted">🔒 Premium — Unlock with password. Contact admin for pass.</div>
+        </div>
+
+        <div class="card small-card">
+          <div class="card-head">Voice</div>
+          <div class="controls">
+            <button class="btn dark" id="voice-toggle">Voice: Off</button>
+            <select id="voice-gender" class="select">
+              <option value="male">Male Voice</option>
+              <option value="female">Female Voice</option>
+            </select>
+          </div>
+          <div class="card-head">Rules</div>
+          <ul class="rules">
+            <li>একই পরিদ সময়ে এক ব্যবহারকারী একবারেই সিগন্যাল পাবে।</li>
+            <li>২ ঘন্টার ভিতরে ৮টি জয় পেলে সিগন্যাল Pause হবে (২ ঘন্টা)।</li>
+            <li>৭ ধারাবাহিক লস হলে Owner-কে জানানো হবে এবং UI তে Recovery বার্তা দেখানো হবে।</li>
+          </ul>
+        </div>
+      </aside>
+
+      <section class="panel right">
+        <div class="card big">
+          <div class="card-head">Signal</div>
+          <div id="result" class="result">No signal yet</div>
+          <div id="result-meta" class="meta"></div>
+          <div id="result-announce" class="announce"></div>
+          <div class="ref">
+            <a class="ref-btn" href="https://www.dkwin.xyz/#/register?invitationCode=16532572738" target="_blank">Register with referral</a>
+            <a class="ref-btn" href="https://t.me/SR_Public_metting" target="_blank">Join Channel</a>
+          </div>
+        </div>
+
+        <div class="card small-card">
+          <div class="card-head">Activity Log</div>
+          <div id="log" class="log">No activity yet</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="foot">
+      <div>© Team SR VIP — SHAHED</div>
+      <div class="muted small">Premium | Lighting | Voice Announce</div>
+    </footer>
+  </div>
+
+  <!-- Password Modal -->
+  <div id="pw-modal" class="modal-back">
+    <div class="modal">
+      <h2>Enter Password to Unlock</h2>
+      <input id="pw-input" type="password" placeholder="Password" />
+      <div class="modal-actions">
+        <button class="btn primary" id="pw-submit">Unlock</button>
+        <a class="btn ghost" id="pw-connect" href="https://t.me/shahedbintarek" target="_blank">Connect Admin</a>
+      </div>
+      <div class="hint">If you don't have password, contact admin: @shahedbintarek</div>
+    </div>
+  </div>
+
+  <!-- History Modal -->
+  <div id="hist-modal" class="modal-back hidden">
+    <div class="modal">
+      <h2>Your Last Signals</h2>
+      <div id="hist-list" class="hist-list"></div>
+      <div class="modal-actions">
+        <button class="btn primary" id="hist-close">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
